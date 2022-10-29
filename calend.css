@@ -1,0 +1,65 @@
+table {
+    width: 50%; 
+    border-collapse: collapse; 
+    border-spacing: 0px 0px;
+}
+table thead tr {
+    color: #086d16; 
+    font-weight: normal;
+    font-size: 150%;
+}
+table tbody tr td {
+    color: #086d16;
+    border: 3px solid #e4ece3; 
+    background:  #f3f5f4;
+    
+}
+.vy{
+    background:  #c06937; 
+    color: white;
+}
+.zag{
+    border:1px #1a974a  solid; 
+    border-radius: 10px; 
+    padding: 10px; 
+    background:  #d7e9dc;
+}
+hr {
+    border: 5px;
+    color: rgb(36, 87, 55);
+    background-color: rgb(16, 83, 46); 
+    height: 1px;
+    width: 210px;
+    margin: 7px;
+   }
+.ots{
+    padding: 10px;
+}
+.first-text{
+    font-size: 60px;
+    color: darkgreen;
+}
+button{
+    color: white;
+    background-color: darkgreen;
+}
+.selected{
+    background-color: green;
+}
+.disable{
+    background-color: red;
+}
+a {
+    color: darkgreen; 
+    }
+    input:valid + span:after {
+        content: url(images/ok.png); 
+        padding-left: 5px;
+       }
+       input:invalid + span:after {
+        content: url(images/nook.png);
+        padding-left: 5px;
+       }
+       input[type="number"] {
+        margin-right: -3px;
+       }
