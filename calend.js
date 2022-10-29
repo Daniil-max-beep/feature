@@ -1,4 +1,3 @@
-// скрипт
 function setCursorPosition(pos, e) {
     e.focus();
     if (e.setSelectionRange) e.setSelectionRange(pos, pos);
