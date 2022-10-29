@@ -13,5 +13,5 @@
 # Launch of the project
 
 1. Clone the repository
-2. use "npm start" command - when using git services
-3. open the files in a software compiler such as Visual Studio Code, compile.
+2. Use "npm start" command - when using git services
+3. Open the files in a software compiler such as Visual Studio Code, compile.
