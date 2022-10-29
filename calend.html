@@ -1,0 +1,1635 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="jquery.mask.min.js"></script>
+<meta charset="utf-8">
+<div class="tab">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card-block">
+                    <p class="first-text"><b>Бронирование даты</b></p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card-block">
+                    <div class="zag">
+                        <table id="month_1" cellpadding="2">
+                            <thead>
+                                <tr>
+                                    <td colspan="7">
+                                        <center>
+                                            <p>Январь</p>
+                                            <hr />
+                                        </center>
+                                    </td>
+                                </tr>
+                                <td class="ots">
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>пн</td>
+                                    <td>вт</td>
+                                    <td>ср</td>
+                                    <td>чт</td>
+                                    <td>пт</td>
+                                    <td class="vy">сб</td>
+                                    <td class="vy">вс</td>
+                                </tr>
+                                <td style="visibility: hidden;"></td>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('01/01');return false;">1</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('02/01');return false;">2</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('03/01');return false;">3</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('04/01');return false;">4</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('05/01');return false;">5</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('06/01');return false;">6</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('07/01');return false;">7</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('08/01');return false;">8</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('09/01');return false;">9</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('10/01');return false;">10</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('11/01');return false;">11</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('12/01');return false;">12</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('13/01');return false;">13</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('14/01');return false;">14</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('15/01');return false;">15</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('16/01');return false;">16</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('17/01');return false;">17</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('18/01');return false;">18</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('19/01');return false;">19</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('20/01');return false;">20</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('21/01');return false;">21</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('22/01');return false;">22</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('23/01');return false;">23</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('24/01');return false;">24</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('25/01');return false;">25</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('26/01');return false;">26</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('27/01');return false;">27</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('28/01');return false;">28</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('29/01');return false;">29</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('30/01');return false;">30</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('31/01');return false;">31</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card-block">
+                    <div class="zag">
+                        <table id="month_2" cellpadding="2">
+                            <thead>
+                                <tr>
+                                    <td colspan="7">
+                                        <center>
+                                            <p>Февраль</p>
+                                            <hr />
+                                        </center>
+                                    </td>
+                                </tr>
+                                <td class="ots">
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>пн</td>
+                                    <td>вт</td>
+                                    <td>ср</td>
+                                    <td>чт</td>
+                                    <td>пт</td>
+                                    <td class="vy">сб</td>
+                                    <td class="vy">вс</td>
+                                </tr>
+                                <td style="visibility: hidden;"></td>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('01/02');return false;">1</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('02/02');return false;">2</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('03/02');return false;">3</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('04/02');return false;">4</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('05/02');return false;">5</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('06/02');return false;">6</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('07/02');return false;">7</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('08/02');return false;">8</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('09/02');return false;">9</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('10/02');return false;">10</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('11/02');return false;">11</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('12/02');return false;">12</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('13/02');return false;">13</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('14/02');return false;">14</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('15/02');return false;">15</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('16/02');return false;">16</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('17/02');return false;">17</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('18/02');return false;">18</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('19/02');return false;">19</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('20/02');return false;">20</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('21/02');return false;">21</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('22/02');return false;">22</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('23/02');return false;">23</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('24/02');return false;">24</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('25/02');return false;">25</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('26/02');return false;">26</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('27/02');return false;">27</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('28/02');return false;">28</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('29/02');return false;">29</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('30/02');return false;">30</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('31/02');return false;">31</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card-block">
+                    <div class="zag">
+                        <table id="month_3" cellpadding="2">
+                            <thead>
+                                <tr>
+                                    <td colspan="7">
+                                        <center>
+                                            <p>Март</p>
+                                            <hr />
+                                        </center>
+                                    </td>
+                                </tr>
+                                <td class="ots">
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>пн</td>
+                                    <td>вт</td>
+                                    <td>ср</td>
+                                    <td>чт</td>
+                                    <td>пт</td>
+                                    <td class="vy">сб</td>
+                                    <td class="vy">вс</td>
+                                </tr>
+                                <td style="visibility: hidden;"></td>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('01/03');return false;">1</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('02/03');return false;">2</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('03/03');return false;">3</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('04/03');return false;">4</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('05/03');return false;">5</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('06/03');return false;">6</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('07/03');return false;">7</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('08/03');return false;">8</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('09/03');return false;">9</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('10/03');return false;">10</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('11/03');return false;">11</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('12/03');return false;">12</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('13/03');return false;">13</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('14/03');return false;">14</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('15/03');return false;">15</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('16/03');return false;">16</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('17/03');return false;">17</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('18/03');return false;">18</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('19/03');return false;">19</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('20/03');return false;">20</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('21/03');return false;">21</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('22/03');return false;">22</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('23/03');return false;">23</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('24/03');return false;">24</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('25/03');return false;">25</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('26/03');return false;">26</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('27/03');return false;">27</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('28/03');return false;">28</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('29/03');return false;">29</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('30/03');return false;">30</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('31/03');return false;">31</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card-block">
+                    <div class="zag">
+                        <table id="month_4" cellpadding="2">
+                            <thead>
+                                <tr>
+                                    <td colspan="7">
+                                        <center>
+                                            <p>Апрель</p>
+                                            <hr />
+                                        </center>
+                                    </td>
+                                </tr>
+                                <td class="ots">
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>пн</td>
+                                    <td>вт</td>
+                                    <td>ср</td>
+                                    <td>чт</td>
+                                    <td>пт</td>
+                                    <td class="vy">сб</td>
+                                    <td class="vy">вс</td>
+                                </tr>
+                                <td style="visibility: hidden;"></td>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('01/04');return false;">1</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('02/04');return false;">2</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('03/04');return false;">3</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('04/04');return false;">4</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('05/04');return false;">5</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('06/04');return false;">6</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('07/04');return false;">7</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('08/04');return false;">8</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('09/04');return false;">9</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('10/04');return false;">10</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('11/04');return false;">11</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('12/04');return false;">12</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('13/04');return false;">13</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('14/04');return false;">14</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('15/04');return false;">15</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('16/04');return false;">16</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('17/04');return false;">17</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('18/04');return false;">18</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('19/04');return false;">19</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('20/04');return false;">20</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('21/04');return false;">21</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('22/04');return false;">22</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('23/04');return false;">23</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('24/04');return false;">24</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('25/04');return false;">25</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('26/04');return false;">26</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('27/04');return false;">27</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('28/04');return false;">28</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('29/04');return false;">29</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('30/04');return false;">30</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('31/04');return false;">31</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card-block">
+                    <div class="zag">
+                        <table id="month_5" cellpadding="2">
+                            <thead>
+                                <tr>
+                                    <td colspan="7">
+                                        <center>
+                                            <p>Май</p>
+                                            <hr />
+                                        </center>
+                                    </td>
+                                </tr>
+                                <td class="ots">
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>пн</td>
+                                    <td>вт</td>
+                                    <td>ср</td>
+                                    <td>чт</td>
+                                    <td>пт</td>
+                                    <td class="vy">сб</td>
+                                    <td class="vy">вс</td>
+                                </tr>
+                                <td style="visibility: hidden;"></td>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('01/05');return false;">1</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('02/05');return false;">2</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('03/05');return false;">3</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('04/05');return false;">4</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('05/05');return false;">5</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('06/05');return false;">6</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('07/05');return false;">7</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('08/05');return false;">8</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('09/05');return false;">9</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('10/05');return false;">10</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('11/05');return false;">11</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('12/05');return false;">12</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('13/05');return false;">13</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('14/05');return false;">14</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('15/05');return false;">15</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('16/05');return false;">16</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('17/05');return false;">17</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('18/05');return false;">18</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('19/05');return false;">19</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('20/05');return false;">20</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('21/05');return false;">21</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('22/05');return false;">22</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('23/05');return false;">23</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('24/05');return false;">24</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('25/05');return false;">25</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('26/05');return false;">26</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('27/05');return false;">27</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('28/05');return false;">28</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('29/05');return false;">29</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('30/05');return false;">30</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('31/05');return false;">31</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card-block">
+                    <div class="zag">
+                        <table id="month_6" cellpadding="2">
+                            <thead>
+                                <tr>
+                                    <td colspan="7">
+                                        <center>
+                                            <p>Июнь</p>
+                                            <hr />
+                                        </center>
+                                    </td>
+                                </tr>
+                                <td class="ots">
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>пн</td>
+                                    <td>вт</td>
+                                    <td>ср</td>
+                                    <td>чт</td>
+                                    <td>пт</td>
+                                    <td class="vy">сб</td>
+                                    <td class="vy">вс</td>
+                                </tr>
+                                <td style="visibility: hidden;"></td>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('01/06');return false;">1</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('02/06');return false;">2</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('03/06');return false;">3</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('04/06');return false;">4</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('05/06');return false;">5</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('06/06');return false;">6</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('07/06');return false;">7</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('08/06');return false;">8</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('09/06');return false;">9</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('10/06');return false;">10</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('11/06');return false;">11</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('12/06');return false;">12</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('13/06');return false;">13</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('14/06');return false;">14</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('15/06');return false;">15</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('16/06');return false;">16</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('17/06');return false;">17</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('18/06');return false;">18</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('19/06');return false;">19</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('20/06');return false;">20</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('21/06');return false;">21</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('22/06');return false;">22</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('23/06');return false;">23</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('24/06');return false;">24</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('25/06');return false;">25</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('26/06');return false;">26</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('27/06');return false;">27</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('28/06');return false;">28</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('29/06');return false;">29</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('30/06');return false;">30</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('31/06');return false;">31</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card-block">
+                    <div class="zag">
+                        <table id="month_7" cellpadding="2">
+                            <thead>
+                                <tr>
+                                    <td colspan="7">
+                                        <center>
+                                            <p>Июль</p>
+                                            <hr />
+                                        </center>
+                                    </td>
+                                </tr>
+                                <td class="ots">
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>пн</td>
+                                    <td>вт</td>
+                                    <td>ср</td>
+                                    <td>чт</td>
+                                    <td>пт</td>
+                                    <td class="vy">сб</td>
+                                    <td class="vy">вс</td>
+                                </tr>
+                                <td style="visibility: hidden;"></td>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('01/07');return false;">1</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('02/07');return false;">2</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('03/07');return false;">3</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('04/07');return false;">4</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('05/07');return false;">5</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('06/07');return false;">6</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('07/07');return false;">7</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('08/07');return false;">8</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('09/07');return false;">9</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('10/07');return false;">10</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('11/07');return false;">11</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('12/07');return false;">12</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('13/07');return false;">13</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('14/07');return false;">14</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('15/07');return false;">15</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('16/07');return false;">16</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('17/07');return false;">17</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('18/07');return false;">18</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('19/07');return false;">19</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('20/07');return false;">20</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('21/07');return false;">21</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('22/07');return false;">22</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('23/07');return false;">23</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('24/07');return false;">24</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('25/07');return false;">25</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('26/07');return false;">26</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('27/07');return false;">27</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('28/07');return false;">28</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('29/07');return false;">29</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('30/07');return false;">30</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('31/07');return false;">31</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card-block">
+                    <div class="zag">
+                        <table id="month_8" cellpadding="2">
+                            <thead>
+                                <tr>
+                                    <td colspan="7">
+                                        <center>
+                                            <p>Август</p>
+                                            <hr />
+                                        </center>
+                                    </td>
+                                </tr>
+                                <td class="ots">
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>пн</td>
+                                    <td>вт</td>
+                                    <td>ср</td>
+                                    <td>чт</td>
+                                    <td>пт</td>
+                                    <td class="vy">сб</td>
+                                    <td class="vy">вс</td>
+                                </tr>
+                                <td style="visibility: hidden;"></td>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('01/08');return false;">1</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('02/08');return false;">2</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('03/08');return false;">3</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('04/08');return false;">4</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('05/08');return false;">5</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('06/08');return false;">6</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('07/08');return false;">7</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('08/08');return false;">8</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('09/08');return false;">9</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('10/08');return false;">10</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('11/08');return false;">11</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('12/08');return false;">12</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('13/08');return false;">13</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('14/08');return false;">14</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('15/08');return false;">15</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('16/08');return false;">16</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('17/08');return false;">17</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('18/08');return false;">18</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('19/08');return false;">19</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('20/08');return false;">20</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('21/08');return false;">21</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('22/08');return false;">22</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('23/08');return false;">23</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('24/08');return false;">24</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('25/08');return false;">25</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('26/08');return false;">26</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('27/08');return false;">27</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('28/08');return false;">28</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('29/08');return false;">29</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('30/08');return false;">30</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('31/08');return false;">31</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card-block">
+                    <div class="zag">
+                        <table id="month_9" cellpadding="2">
+                            <thead>
+                                <tr>
+                                    <td colspan="7">
+                                        <center>
+                                            <p>Сентябрь</p>
+                                            <hr />
+                                        </center>
+                                    </td>
+                                </tr>
+                                <td class="ots">
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>пн</td>
+                                    <td>вт</td>
+                                    <td>ср</td>
+                                    <td>чт</td>
+                                    <td>пт</td>
+                                    <td class="vy">сб</td>
+                                    <td class="vy">вс</td>
+                                </tr>
+                                <td style="visibility: hidden;"></td>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('01/09');return false;">1</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('02/09');return false;">2</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('03/09');return false;">3</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('04/09');return false;">4</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('05/09');return false;">5</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('06/09');return false;">6</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('07/09');return false;">7</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('08/09');return false;">8</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('09/09');return false;">9</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('10/09');return false;">10</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('11/09');return false;">11</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('12/09');return false;">12</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('13/09');return false;">13</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('14/09');return false;">14</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('15/09');return false;">15</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('16/09');return false;">16</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('17/09');return false;">17</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('18/09');return false;">18</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('19/09');return false;">19</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('20/09');return false;">20</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('21/09');return false;">21</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('22/09');return false;">22</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('23/09');return false;">23</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('24/09');return false;">24</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('25/09');return false;">25</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('26/09');return false;">26</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('27/09');return false;">27</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('28/09');return false;">28</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('29/09');return false;">29</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('30/09');return false;">30</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('31/09');return false;">31</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card-block">
+                    <div class="zag">
+                        <table id="month_10" cellpadding="2">
+                            <thead>
+                                <tr>
+                                    <td colspan="7">
+                                        <center>
+                                            <p>Октябрь</p>
+                                            <hr />
+                                        </center>
+                                    </td>
+                                </tr>
+                                <td class="ots">
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>пн</td>
+                                    <td>вт</td>
+                                    <td>ср</td>
+                                    <td>чт</td>
+                                    <td>пт</td>
+                                    <td class="vy">сб</td>
+                                    <td class="vy">вс</td>
+                                </tr>
+                                <td style="visibility: hidden;"></td>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('01/10');return false;">1</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('02/10');return false;">2</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('03/10');return false;">3</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('04/10');return false;">4</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('05/10');return false;">5</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('06/10');return false;">6</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('07/10');return false;">7</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('08/10');return false;">8</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('09/10');return false;">9</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('10/10');return false;">10</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('11/10');return false;">11</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('12/10');return false;">12</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('13/10');return false;">13</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('14/10');return false;">14</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('15/10');return false;">15</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('16/10');return false;">16</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('17/10');return false;">17</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('18/10');return false;">18</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('19/10');return false;">19</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('20/10');return false;">20</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('21/10');return false;">21</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('22/10');return false;">22</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('23/10');return false;">23</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('24/10');return false;">24</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('25/10');return false;">25</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('26/10');return false;">26</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('27/10');return false;">27</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('28/10');return false;">28</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('29/10');return false;">29</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('30/10');return false;">30</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('31/10');return false;">31</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card-block">
+                    <div class="zag">
+                        <table id="month_11" cellpadding="2">
+                            <thead>
+                                <tr>
+                                    <td colspan="7">
+                                        <center>
+                                            <p>Ноябрь</p>
+                                            <hr />
+                                        </center>
+                                    </td>
+                                </tr>
+                                <td class="ots">
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>пн</td>
+                                    <td>вт</td>
+                                    <td>ср</td>
+                                    <td>чт</td>
+                                    <td>пт</td>
+                                    <td class="vy">сб</td>
+                                    <td class="vy">вс</td>
+                                </tr>
+                                <td style="visibility: hidden;"></td>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('01/11');return false;">1</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('02/11');return false;">2</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('03/11');return false;">3</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('04/11');return false;">4</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('05/11');return false;">5</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('06/11');return false;">6</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('07/11');return false;">7</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('08/11');return false;">8</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('09/11');return false;">9</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('10/11');return false;">10</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('11/11');return false;">11</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('12/11');return false;">12</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('13/11');return false;">13</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('14/11');return false;">14</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('15/11');return false;">15</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('16/11');return false;">16</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('17/11');return false;">17</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('18/11');return false;">18</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('19/11');return false;">19</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('20/11');return false;">20</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('21/11');return false;">21</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('22/11');return false;">22</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('23/11');return false;">23</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('24/11');return false;">24</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('25/11');return false;">25</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('26/11');return false;">26</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('27/11');return false;">27</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('28/11');return false;">28</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('29/11');return false;">29</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('30/11');return false;">30</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('31/11');return false;">31</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card-block">
+                    <div class="zag">
+                        <table id="month_12" cellpadding="2">
+                            <thead>
+                                <tr>
+                                    <td colspan="7">
+                                        <center>
+                                            <p>Декабрь</p>
+                                            <hr />
+                                        </center>
+                                    </td>
+                                </tr>
+                                <td class="ots">
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>пн</td>
+                                    <td>вт</td>
+                                    <td>ср</td>
+                                    <td>чт</td>
+                                    <td>пт</td>
+                                    <td class="vy">сб</td>
+                                    <td class="vy">вс</td>
+                                </tr>
+                                <td style="visibility: hidden;"></td>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('01/12');return false;">1</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('02/12');return false;">2</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('03/12');return false;">3</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('04/12');return false;">4</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('05/12');return false;">5</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('06/12');return false;">6</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('07/12');return false;">7</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('08/12');return false;">8</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('09/12');return false;">9</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('10/12');return false;">10</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('11/12');return false;">11</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('12/12');return false;">12</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('13/12');return false;">13</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('14/12');return false;">14</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('15/12');return false;">15</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('16/12');return false;">16</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('17/12');return false;">17</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('18/12');return false;">18</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('19/12');return false;">19</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('20/12');return false;">20</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('21/12');return false;">21</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('22/12');return false;">22</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('23/12');return false;">23</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('24/12');return false;">24</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('25/12');return false;">25</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('26/12');return false;">26</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('27/12');return false;">27</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('28/12');return false;">28</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('29/12');return false;">29</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('30/12');return false;">30</a>
+                                    </td>
+                                    <td>
+                                        <a class="day_btn" href="#" onclick="setDate('31/12');return false;">31</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>Укажите телефон :</p>
+        <form id="form_1" method="POST">
+            <input id="online_phone" name="phone" type="text" required>
+            <input id="date" name="date" type="hidden">
+            <button class="bt" onclick="sendForm();return false;">Забронировать</button>
+        </form>
+    </div>
+</div><br>
+
+<link rel='stylesheet' href='calend.css' />
+
+
+<script src='calend.js'></script>
