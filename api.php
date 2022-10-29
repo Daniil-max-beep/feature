@@ -1,3 +1,4 @@
+
 <?php
 $data = json_decode(file_get_contents('db.json'));
 switch ($_GET['method']) {
